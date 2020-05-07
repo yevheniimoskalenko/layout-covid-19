@@ -1,0 +1,23 @@
+// font-family: 'Red Hat Display', sans-serif;
+// font-family: 'Baloo 2', cursive;
+body {
+  font-family: 'Baloo 2', cursive;
+  font-size: 18px;
+  font-weight: normal;
+  color: #035755;
+  background: rgba(181, 116, 116, 0.157);
+
+}
+
+
+h1,
+h2,
+.logo span {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+}
