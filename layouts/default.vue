@@ -3,7 +3,7 @@
     <el-header>
       <el-row type="flex" justify="center">
         <el-col :span="20">
-          <app-header />
+          <app-nav />
         </el-col>
       </el-row>
     </el-header>
@@ -22,9 +22,9 @@
   </el-container>
 </template>
 <script>
-import appHeader from '@/components/header'
+import appNav from "@/components/nav";
 export default {
-  components: { appHeader }
-}
+  components: { appNav }
+};
 </script>
 <style></style>

@@ -5,13 +5,14 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: #035755;
-  background: rgba(181, 116, 116, 0.157);
+  background: rgba(181, 116, 116, 0.089);
 
 }
 
 
 h1,
 h2,
+h3,
 .logo span {
   font-family: 'Red Hat Display', sans-serif;
 }
@@ -20,4 +21,28 @@ h1 {
   font-weight: bold;
   font-size: 32px;
   line-height: 36px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h3 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-size: 22px;
+}
+
+h2 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-size: 42px;
+}
+
+.btn {
+  font-family: 'Baloo 2', cursive;
+}
+
+.covid {
+  h3 {
+    color: #fa5652;
+  }
 }
