@@ -9,6 +9,11 @@ body {
 
 }
 
+h4 {
+  font-family: 'Baloo 2', cursive;
+
+}
+
 
 h1,
 h2,
@@ -29,6 +34,8 @@ h3 {
   margin-block-start: 0em;
   margin-block-end: 0em;
   font-size: 22px;
+  color: #fa5652;
+
 }
 
 h2 {
@@ -42,7 +49,16 @@ h2 {
 }
 
 .covid {
-  h3 {
-    color: #fa5652;
+  text-align: center;
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  p {
+    font-size: 20px;
+    line-height: 40px;
   }
 }
