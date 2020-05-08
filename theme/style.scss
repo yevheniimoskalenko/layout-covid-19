@@ -1,25 +1,22 @@
 // font-family: 'Red Hat Display', sans-serif;
 // font-family: 'Baloo 2', cursive;
 body {
-  font-family: 'Baloo 2', cursive;
+  font-family: "Baloo 2", cursive;
   font-size: 18px;
   font-weight: normal;
   color: #035755;
   background: rgba(181, 116, 116, 0.089);
-
 }
 
 h4 {
-  font-family: 'Baloo 2', cursive;
-
+  font-family: "Baloo 2", cursive;
 }
-
 
 h1,
 h2,
 h3,
 .logo span {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 h1 {
@@ -35,7 +32,6 @@ h3 {
   margin-block-end: 0em;
   font-size: 22px;
   color: #fa5652;
-
 }
 
 h2 {
@@ -45,7 +41,7 @@ h2 {
 }
 
 .btn {
-  font-family: 'Baloo 2', cursive;
+  font-family: "Baloo 2", cursive;
 }
 
 .covid {
@@ -55,7 +51,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0px auto;
 
   p {
     font-size: 20px;
