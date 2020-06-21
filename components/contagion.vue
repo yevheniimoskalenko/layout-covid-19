@@ -30,9 +30,9 @@
           <el-card shadow="always" class="card" :body-style="{padding: '0px'}">
             <div class="covid__item">
               <div class="covid_head">
-                <img src="@/static/Group 18542.svg" alt="hand" />
+                <img src="@/static/Group 18542.svg" alt="hand" class="hend" />
               </div>
-              <div class="covid_main">
+              <div class="covid_main covid_cnt">
                 <h4>Human Contacts</h4>
                 <p>Washing your hands is one of thesimplest ways you can protect</p>
               </div>
@@ -64,6 +64,10 @@
 .card {
   margin-bottom: 30px;
 }
+.hend {
+  margin-bottom: 10px;
+}
+
 .contagion {
   display: flex;
   justify-content: center;
@@ -82,6 +86,11 @@
   position: relative;
   bottom: 0;
   left: 0;
+  padding: 10px 20px;
+  height: 150px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 .el-card {
   border-bottom: 3px solid #fff;
@@ -136,6 +145,7 @@
 
   .covid__item {
     height: 550px;
+    padding: 50px;
     img {
       width: 80%;
       min-width: auto;
@@ -150,7 +160,8 @@
   }
 
   .covid__item {
-    height: 550px;
+    height: 400px;
+    padding: 50px;
 
     img {
       width: 80%;
@@ -168,7 +179,9 @@
     width: 50%;
   }
   .covid__item {
-    height: 550px;
+    height: 400px;
+    padding: 50px;
+
     img {
       width: 80%;
       min-width: auto;
