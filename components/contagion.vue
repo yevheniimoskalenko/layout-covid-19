@@ -164,7 +164,9 @@
   .covid_head {
     height: 100%;
   }
-
+  .covid {
+    width: 50%;
+  }
   .covid__item {
     height: 550px;
     img {
