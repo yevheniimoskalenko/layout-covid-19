@@ -32,6 +32,7 @@ export default {
 .el-menu--horizontal > .el-menu-item:not(.is-disabled):hover,
 .el-menu--horizontal > .el-menu-item {
   background: none;
+  border-bottom: none;
 }
 .el-menu--horizontal {
   border-right: none;
@@ -42,7 +43,9 @@ export default {
 .nav {
   display: flex;
   justify-content: space-between;
+  border: none;
 }
+
 .el-menu-item.is-active {
   color: #ff383d;
   border: none;
@@ -51,6 +54,7 @@ export default {
 .el-menu--horizontal > .el-menu-item.is-active {
   background: none;
   color: #ff383d;
+  border: none;
 }
 .el-button {
   background: none;

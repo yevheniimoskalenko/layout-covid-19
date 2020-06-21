@@ -16,15 +16,16 @@
     </el-main>
     <el-row type="flex" justify="center">
       <el-col :span="20">
-        <el-footer>Footer</el-footer>
+        <el-footer><app-footer /></el-footer>
       </el-col>
     </el-row>
   </el-container>
 </template>
 <script>
 import appNav from "@/components/nav";
+import appFooter from "@/components/footer";
 export default {
-  components: { appNav }
+  components: { appNav, appFooter }
 };
 </script>
 <style></style>
