@@ -128,12 +128,23 @@
   }
   .covid {
     width: 100%;
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
 }
 
 @media (min-width: 576px) {
   .covid_head {
     height: 100%;
+  }
+  .covid {
+    width: 100%;
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
 }
 

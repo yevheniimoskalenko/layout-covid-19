@@ -28,7 +28,7 @@
     width: 100%;
     p {
       font-size: 16px;
-      line-height: 20px;
+      line-height: 30px;
     }
   }
   .symptomps {
@@ -40,6 +40,10 @@
 @media (min-width: 576px) {
   .covid {
     width: 100%;
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
   .symptomps {
     img {
