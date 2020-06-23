@@ -1,15 +1,17 @@
 <template>
   <div class="footer">
     <el-row type="flex" align="middle">
-      <el-col><logo /></el-col>
+      <el-col>
+        <logo />
+      </el-col>
       <el-col>
         <el-menu class="menu" :default-active="$route.path" mode="horizontal">
           <el-menu-item index="1">Overview</el-menu-item>
           <el-menu-item index="2">Contagion</el-menu-item>
           <el-menu-item index="3">Symptoms</el-menu-item>
           <el-menu-item index="4">Prevention</el-menu-item>
-        </el-menu></el-col
-      >
+        </el-menu>
+      </el-col>
       <el-col></el-col>
     </el-row>
     <div class="company">
@@ -59,5 +61,30 @@ export default {
   background: none;
   color: #ff383d;
   border: 2px solid #ff383d;
+}
+@media (max-width: 576px) {
+  .company {
+    span {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+}
+@media (min-width: 576px) {
+  .company {
+    span {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
 </style>

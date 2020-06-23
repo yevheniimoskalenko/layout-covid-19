@@ -9,14 +9,14 @@
       </p>
     </div>
     <div class="do">
-      <el-row>
+      <el-row class="left">
         <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
-          <div class="image right">
+          <div class="image">
             <img src="@/static/Masklike.svg" alt="mask" />
           </div>
         </el-col>
         <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
-          <div class="do_content left">
+          <div class="do_content">
             <div class="number">
               <span>1</span>
               <h5>wear masks</h5>
@@ -26,20 +26,21 @@
                 Continually seize impactful vortals rather than future-proof
                 supply chains. Uniquely exploit emerging niches via fully tested
                 meta-services. Competently pursue standards compliant leadership
-                skills vis-a-vis pandemic "outside the box" thinking. Objectively
+                skills vis-a-vis pandemic "outside the box" thinking.
+                Objectively
               </p>
             </div>
           </div>
         </el-col>
       </el-row>
-      <el-row>
+      <el-row class="right">
         <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
-          <div class="image left">
+          <div class="image">
             <img src="@/static/Mask girlwash.svg" alt="mask" />
           </div>
         </el-col>
         <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
-          <div class="do_content right">
+          <div class="do_content">
             <div class="number">
               <span>2</span>
               <h5>wear masks</h5>
@@ -49,20 +50,21 @@
                 Continually seize impactful vortals rather than future-proof
                 supply chains. Uniquely exploit emerging niches via fully tested
                 meta-services. Competently pursue standards compliant leadership
-                skills vis-a-vis pandemic "outside the box" thinking. Objectively
+                skills vis-a-vis pandemic "outside the box" thinking.
+                Objectively
               </p>
             </div>
           </div>
         </el-col>
       </el-row>
-      <el-row>
-        <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
-          <div class="image left">
+      <el-row class="left">
+        <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8" class="left">
+          <div class="image">
             <img src="@/static/Group 15454.svg" alt="mask" />
           </div>
         </el-col>
-        <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
-          <div class="do_content right">
+        <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8" class="right">
+          <div class="do_content">
             <div class="number">
               <span>3</span>
               <h5>wear masks</h5>
@@ -72,20 +74,21 @@
                 Continually seize impactful vortals rather than future-proof
                 supply chains. Uniquely exploit emerging niches via fully tested
                 meta-services. Competently pursue standards compliant leadership
-                skills vis-a-vis pandemic "outside the box" thinking. Objectively
+                skills vis-a-vis pandemic "outside the box" thinking.
+                Objectively
               </p>
             </div>
           </div>
         </el-col>
       </el-row>
-      <el-row>
+      <el-row class="right">
         <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
-          <div class="image right">
+          <div class="image">
             <img src="@/static/Mask.svg" alt="mask" />
           </div>
         </el-col>
         <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
-          <div class="do_content left">
+          <div class="do_content">
             <div class="number">
               <span>4</span>
               <h5>wear masks</h5>
@@ -95,7 +98,8 @@
                 Continually seize impactful vortals rather than future-proof
                 supply chains. Uniquely exploit emerging niches via fully tested
                 meta-services. Competently pursue standards compliant leadership
-                skills vis-a-vis pandemic "outside the box" thinking. Objectively
+                skills vis-a-vis pandemic "outside the box" thinking.
+                Objectively
               </p>
             </div>
           </div>
@@ -103,8 +107,7 @@
       </el-row>
     </div>
   </div>
-</template
->
+</template>
 <style lang="scss" scoped>
 .shouldWeDo {
   margin-top: 160px;
@@ -128,12 +131,7 @@
     line-height: 35px;
   }
 }
-.left {
-  align-items: flex-start;
-}
-.right {
-  align-items: flex-end;
-}
+
 .do {
   margin-top: 70px;
   display: flex;
@@ -242,6 +240,13 @@
       line-height: 35px;
     }
   }
+  .left {
+    flex-direction: row;
+  }
+  .right {
+    flex-direction: row-reverse;
+  }
+
   .el-row {
     margin-bottom: 50px;
     display: flex;
@@ -265,7 +270,12 @@
     align-items: center;
     justify-content: center;
   }
-
+  .left {
+    flex-direction: row;
+  }
+  .right {
+    flex-direction: row-reverse;
+  }
   .el-row {
     display: flex;
     justify-content: space-between;

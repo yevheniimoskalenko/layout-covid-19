@@ -61,6 +61,9 @@
     h2 {
       text-align: center;
     }
+    h3 {
+      font-size: 20px;
+    }
   }
   .container {
     display: flex;
@@ -91,6 +94,9 @@
     p {
       font-size: 16px;
       line-height: 30px;
+    }
+    h3 {
+      font-size: 20px;
     }
   }
 }
