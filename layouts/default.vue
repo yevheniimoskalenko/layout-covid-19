@@ -3,7 +3,7 @@
     <el-header>
       <el-row type="flex" justify="center">
         <el-col :span="20">
-          <!-- <app-nav /> -->
+          <app-nav />
         </el-col>
       </el-row>
     </el-header>
@@ -16,7 +16,7 @@
     </el-main>
     <el-row type="flex" justify="center">
       <el-col :span="20">
-        <!-- <el-footer><app-footer /></el-footer> -->
+        <el-footer><app-footer /></el-footer>
       </el-col>
     </el-row>
   </el-container>
@@ -28,4 +28,3 @@ export default {
   components: { appNav, appFooter }
 };
 </script>
-<style></style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="coronovirus">
+  <div class="coronovirus" id="nav_1">
     <el-row class="cont">
       <el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="12">
         <div class="image">

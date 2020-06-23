@@ -11,7 +11,11 @@
     <div class="covid__contant">
       <el-row :gutter="40">
         <el-col :sm="24" :xl="12" :xs="24" :md="8" :lg="8">
-          <el-card shadow="always" class="card" :body-style="{padding: '0px'}">
+          <el-card
+            shadow="always"
+            class="card"
+            :body-style="{ padding: '0px' }"
+          >
             <div class="covid__item">
               <div class="covid_head">
                 <img src="@/static/Group 18544.svg" alt />
@@ -27,20 +31,30 @@
           </el-card>
         </el-col>
         <el-col :sm="24" :xl="12" :xs="24" :md="8" :lg="8">
-          <el-card shadow="always" class="card" :body-style="{padding: '0px'}">
+          <el-card
+            shadow="always"
+            class="card"
+            :body-style="{ padding: '0px' }"
+          >
             <div class="covid__item">
               <div class="covid_head">
                 <img src="@/static/Group 18542.svg" alt="hand" class="hend" />
               </div>
               <div class="covid_main covid_cnt">
                 <h4>Human Contacts</h4>
-                <p>Washing your hands is one of thesimplest ways you can protect</p>
+                <p>
+                  Washing your hands is one of thesimplest ways you can protect
+                </p>
               </div>
             </div>
           </el-card>
         </el-col>
         <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
-          <el-card shadow="always" class="card" :body-style="{padding: '0px'}">
+          <el-card
+            shadow="always"
+            class="card"
+            :body-style="{ padding: '0px' }"
+          >
             <div class="covid__item">
               <div class="covid_head">
                 <img src="@/static/Group 18540.svg" alt="coup" />
@@ -48,8 +62,8 @@
               <div class="covid_main">
                 <h4>Containted Objects</h4>
                 <p>
-                  Use the tissue while sneezing,In this way, you can protect your
-                  droplets.
+                  Use the tissue while sneezing,In this way, you can protect
+                  your droplets.
                 </p>
               </div>
             </div>
@@ -58,8 +72,7 @@
       </el-row>
     </div>
   </div>
-</template
->
+</template>
 <style lang="scss" scoped>
 .card {
   margin-bottom: 30px;
