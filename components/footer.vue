@@ -1,18 +1,41 @@
 <template>
   <div class="footer">
     <el-row type="flex" align="middle">
-      <el-col>
+      <el-col :span="3" :sm="4" :xl="12" :xs="3" :md="4" :lg="6" class="logo">
         <logo />
       </el-col>
-      <el-col>
-        <el-menu class="menu" :default-active="$route.path" mode="horizontal">
+      <el-col
+        :span="21"
+        :sm="20"
+        :xl="12"
+        :xs="21"
+        :md="20"
+        :lg="18"
+        class="menu_arr"
+      >
+        <el-dropdown class="show">
+          <span class="el-dropdown-link">
+            <i class="el-icon-s-grid"></i>
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item index="1">Overview</el-dropdown-item>
+            <el-dropdown-item>Contagion</el-dropdown-item>
+            <el-dropdown-item>Symptoms</el-dropdown-item>
+            <el-dropdown-item>Prevention</el-dropdown-item>
+            <el-dropdown-item>Contact</el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
+
+        <el-menu :default-active="$route.path" class="hidden" mode="horizontal">
           <el-menu-item index="1">Overview</el-menu-item>
           <el-menu-item index="2">Contagion</el-menu-item>
           <el-menu-item index="3">Symptoms</el-menu-item>
           <el-menu-item index="4">Prevention</el-menu-item>
+          <el-menu-item index="5">
+            <el-button round>Contact</el-button>
+          </el-menu-item>
         </el-menu>
       </el-col>
-      <el-col></el-col>
     </el-row>
     <div class="company">
       <span>2020 @ All rights reserved by pixelspark.co</span>
@@ -26,6 +49,36 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.menu_arr {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.el-icon-s-grid {
+  color: #e23238;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.el-dropdown {
+  font-size: 24px;
+}
+.el-row {
+  display: flex;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: flex;
+  align-items: flex-end;
+}
+.el-dropdown {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .company {
   display: flex;
   justify-content: center;
@@ -69,6 +122,15 @@ export default {
       line-height: 30px;
     }
   }
+  .hidden {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .el-menu-item {
+    padding: 0 5px;
+  }
 }
 @media (min-width: 576px) {
   .company {
@@ -77,14 +139,38 @@ export default {
       line-height: 30px;
     }
   }
+  .hidden {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
+  .show {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
+  .show {
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
 }
 
 @media (min-width: 1200px) {
+  .show {
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
 }
 </style>
