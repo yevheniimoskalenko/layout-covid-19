@@ -70,6 +70,7 @@
   border-radius: 10px;
 }
 .contagion {
+  margin-top: 50px;
 }
 .covid {
   margin-bottom: 60px;
