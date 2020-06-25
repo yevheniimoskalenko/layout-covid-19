@@ -234,6 +234,9 @@
 }
 
 @media (min-width: 992px) {
+  .covid {
+    width: 41%;
+  }
   .do_content {
     p {
       font-size: 18px;
@@ -256,6 +259,9 @@
 }
 
 @media (min-width: 1200px) {
+  .covid {
+    width: 41%;
+  }
   .do_content {
     display: flex;
     justify-content: center;

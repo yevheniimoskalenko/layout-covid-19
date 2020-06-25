@@ -72,6 +72,7 @@
 .contagion {
 }
 .covid {
+  margin-bottom: 60px;
   h2 {
     margin-top: 0em;
     margin-bottom: 0em;
@@ -82,9 +83,7 @@
     line-height: 30px;
   }
 }
-.covid {
-  margin-bottom: 60px;
-}
+
 .card {
 }
 .covid__item {
@@ -180,10 +179,16 @@
       border-radius: 0px 0px 10px 10px;
     }
   }
+  .covid {
+    width: 100%;
+  }
 }
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (min-width: 1200px) {
+  .covid {
+    width: 41%;
+  }
   .covid_main {
     padding: 0px 10px;
     span {
