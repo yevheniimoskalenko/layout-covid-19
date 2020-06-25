@@ -9,19 +9,15 @@
       </p>
     </div>
     <div class="covid__contant">
-      <el-row :gutter="40">
+      <el-row :gutter="30">
         <el-col :sm="24" :xl="12" :xs="24" :md="8" :lg="8">
-          <el-card
-            shadow="always"
-            class="card"
-            :body-style="{ padding: '0px' }"
-          >
+          <el-card shadow="always" class="card">
             <div class="covid__item">
               <div class="covid_head">
                 <img src="@/static/Group 18544.svg" alt />
               </div>
               <div class="covid_main">
-                <h4>Air Transmission</h4>
+                <span>Air Transmission</span>
                 <p>
                   Objectively evolve tactical expertise before extensible
                   initiatives. Efficiently simplify
@@ -31,36 +27,26 @@
           </el-card>
         </el-col>
         <el-col :sm="24" :xl="12" :xs="24" :md="8" :lg="8">
-          <el-card
-            shadow="always"
-            class="card"
-            :body-style="{ padding: '0px' }"
-          >
+          <el-card shadow="always" class="card">
             <div class="covid__item">
               <div class="covid_head">
                 <img src="@/static/Group 18542.svg" alt="hand" class="hend" />
               </div>
-              <div class="covid_main covid_cnt">
-                <h4>Human Contacts</h4>
-                <p>
-                  Washing your hands is one of thesimplest ways you can protect
-                </p>
+              <div class="covid_main mrt">
+                <span>Human Contacts</span>
+                <p>Washing your hands is one of thesimplest ways you can protect</p>
               </div>
             </div>
           </el-card>
         </el-col>
         <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
-          <el-card
-            shadow="always"
-            class="card"
-            :body-style="{ padding: '0px' }"
-          >
+          <el-card shadow="always" class="card">
             <div class="covid__item">
               <div class="covid_head">
                 <img src="@/static/Group 18540.svg" alt="coup" />
               </div>
               <div class="covid_main">
-                <h4>Containted Objects</h4>
+                <span>Containted Objects</span>
                 <p>
                   Use the tissue while sneezing,In this way, you can protect
                   your droplets.
@@ -74,141 +60,154 @@
   </div>
 </template>
 <style lang="scss" scoped>
-.card {
-  margin-bottom: 30px;
+.el-card.is-always-shadow,
+.el-card.is-hover-shadow:focus,
+.el-card.is-hover-shadow:hover {
+  box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
 }
-.hend {
-  margin-bottom: 10px;
+.el-card {
+  border: none;
+  border-radius: 10px;
 }
-
 .contagion {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 50px;
+}
+.covid {
+  h2 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 42px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+.covid {
+  margin-bottom: 60px;
+}
+.card {
+}
+.covid__item {
+  padding: 0px 20px;
 }
 .covid_head {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
+  margin-top: 45px;
+  img {
+    background-size: cover;
+    max-width: 100%;
+    width: auto;
+  }
 }
 .covid_main {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  padding: 10px 20px;
-  height: 150px;
-  margin-bottom: 50px;
+  margin-top: 55px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #035755;
+  }
+  p {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+  }
+}
+.hend {
+  position: relative;
+  bottom: 25px;
 }
 .el-card {
-  border-bottom: 3px solid #fff;
+  margin: 10px 0;
 }
-.el-card:hover {
-  border-bottom: 3px solid #fa5652;
+.covid_main.covid_cnt {
 }
-.covid {
-  text-align: center;
-  width: 100%;
-}
-.covid__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 550px;
-  padding: 20px;
-  img {
-    width: 80%;
-    min-width: auto;
-  }
-}
+
 @media (max-width: 576px) {
-  .covid_head {
-    height: 100%;
-  }
-  .covid__item {
-    height: 500px;
-    img {
-      width: 80%;
-      min-width: auto;
-    }
-  }
-  .covid {
-    width: 100%;
-    p {
-      font-size: 16px;
-      line-height: 30px;
-    }
+  .card {
   }
 }
 
 @media (min-width: 576px) {
-  .covid_head {
-    height: 100%;
-  }
-  .covid {
-    width: 100%;
-    p {
-      font-size: 16px;
-      line-height: 30px;
-    }
+  .el-card {
+    margin: 10px;
   }
 }
 
 // Средние девайсы («таблетки», >= 768px)
 @media (min-width: 768px) {
-  .covid_head {
-    height: 100%;
-  }
-
-  .covid__item {
-    height: 550px;
-    padding: 50px;
-    img {
-      width: 80%;
-      min-width: auto;
-    }
+  .el-card {
+    margin: 10px;
   }
 }
 
 // Большие девайсы (десктопы, >= 992px)
 @media (min-width: 992px) {
-  .covid_head {
-    height: 100%;
+  .covid_main {
+    padding: 0px 10px;
+    overflow: hidden;
+    span {
+      font-size: 25px;
+      text-align: center;
+    }
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
-
   .covid__item {
-    height: 400px;
-    padding: 50px;
-
-    img {
-      width: 80%;
-      min-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+  }
+  .mrt {
+    margin-top: 35px;
+  }
+  .el-card {
+    max-height: auto;
+    height: 560px;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    &:hover {
+      border-bottom: 2px solid #fa5652;
+      border-radius: 0px 0px 10px 10px;
     }
   }
 }
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (min-width: 1200px) {
-  .covid_head {
-    height: 100%;
-  }
-  .covid {
-    width: 50%;
+  .covid_main {
+    padding: 0px 10px;
+    span {
+      font-size: 30px;
+      text-align: center;
+    }
   }
   .covid__item {
-    height: 400px;
-    padding: 50px;
-
-    img {
-      width: 80%;
-      min-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+  }
+  .mrt {
+    margin-top: 15px;
+  }
+  .el-card {
+    max-height: auto;
+    height: 560px;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    &:hover {
+      border-bottom: 2px solid #fa5652;
+      border-radius: 0px 0px 10px 10px;
     }
   }
 }
