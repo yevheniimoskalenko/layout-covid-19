@@ -1,6 +1,6 @@
 <template>
   <div class="contagion">
-    <div class="covid">
+    <div class="container">
       <h3>Covid-19</h3>
       <h2>Contagion</h2>
       <p>
@@ -72,11 +72,13 @@
 .contagion {
   margin-top: 50px;
 }
-.covid {
-  margin-bottom: 60px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   h2 {
-    margin-top: 0em;
-    margin-bottom: 0em;
     font-size: 42px;
   }
   p {
@@ -85,8 +87,6 @@
   }
 }
 
-.card {
-}
 .covid__item {
   padding: 0px 20px;
 }
@@ -110,6 +110,7 @@
     font-weight: 500;
     font-size: 36px;
     color: #035755;
+    text-align: center;
   }
   p {
     text-align: center;
@@ -180,15 +181,25 @@
       border-radius: 0px 0px 10px 10px;
     }
   }
-  .covid {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
   }
 }
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (min-width: 1200px) {
-  .covid {
-    width: 41%;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
   }
   .covid_main {
     padding: 0px 10px;
