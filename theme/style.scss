@@ -7,6 +7,8 @@ body {
   font-weight: normal;
   color: #035755;
   background: rgba(181, 116, 116, 0.089);
+  display: flex;
+  justify-content: center;
 }
 
 .el-main {
@@ -52,7 +54,9 @@ h2 {
   margin-block-end: 0em;
   font-size: 42px;
 }
-
+.el-container {
+  max-width: 1900px;
+}
 .btn {
   font-family: "Baloo 2", cursive;
 }

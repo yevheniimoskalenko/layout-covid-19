@@ -4,15 +4,7 @@
       <el-col :span="3" :sm="4" :xl="12" :xs="3" :md="4" :lg="6" class="logo">
         <logo />
       </el-col>
-      <el-col
-        :span="21"
-        :sm="20"
-        :xl="12"
-        :xs="21"
-        :md="20"
-        :lg="18"
-        class="menu_arr"
-      >
+      <el-col :span="21" :sm="20" :xl="12" :xs="21" :md="20" :lg="18" class="menu_arr">
         <el-dropdown class="show">
           <span class="el-dropdown-link">
             <i class="el-icon-s-grid"></i>
@@ -45,7 +37,7 @@
 <script>
 import logo from "@/components/Logo";
 export default {
-  components: { logo }
+  components: { logo },
 };
 </script>
 <style lang="scss" scoped>
@@ -118,6 +110,7 @@ export default {
 @media (max-width: 576px) {
   .company {
     span {
+      text-align: center;
       font-size: 16px;
       line-height: 30px;
     }
