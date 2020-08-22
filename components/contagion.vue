@@ -10,7 +10,7 @@
     </div>
     <div class="covid__contant">
       <el-row :gutter="30">
-        <el-col :sm="24" :xl="12" :xs="24" :md="8" :lg="8">
+        <el-col :sm="24" :xl="8" :xs="24" :md="8" :lg="8">
           <el-card shadow="always" class="card">
             <div class="covid__item">
               <div class="covid_head">
@@ -26,7 +26,7 @@
             </div>
           </el-card>
         </el-col>
-        <el-col :sm="24" :xl="12" :xs="24" :md="8" :lg="8">
+        <el-col :sm="24" :xl="8" :xs="24" :md="8" :lg="8">
           <el-card shadow="always" class="card">
             <div class="covid__item">
               <div class="covid_head">
@@ -39,7 +39,7 @@
             </div>
           </el-card>
         </el-col>
-        <el-col :sm="24" :xs="24" :xl="12" :md="8" :lg="8">
+        <el-col :sm="24" :xl="8" :xs="24" :md="8" :lg="8">
           <el-card shadow="always" class="card">
             <div class="covid__item">
               <div class="covid_head">
